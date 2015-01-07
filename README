@@ -1,0 +1,40 @@
+Project     : ACN Programming
+Date        : 16 Nov, 2014
+Student     : Upendra Govindagowda
+Net Id      : uxg140230
+
+Files Attached:
+---------------
+    uxg140230.zip
+    README
+
+Compiling the program:
+----------------------
+1) Unzip uxg140230.zip using the command 'unzip uxg140230.zip'. This will create a directory 'uxg140230'.
+
+2) Enter directory 'uxg140230/'. This is the WORKING directory of the program. This directory contains following subdirectories or files
+   "bin  execute1.sh  execute2.sh  files  HBGP.txt  lib  logs  Makefile  README  src"
+
+3) Run 'make' command. This will compile the code and create following executables in 'bin/' directory.
+   "brouter  controller  irouter"
+
+Running the program:
+--------------------
+1) All the scenario scripts or executubles should be run from the WORKING directory (i.e uxg140230/).   
+
+2) ****IMPORTANT****
+   For the executables to run you should set the environment variable LD_LIBRARY_PATH to 'lib/'
+   This can be done in 2 ways
+   a) Use 'export LD_LIBRARY_PATH=lib/' in your current shell OR
+   b) [Recommended] Let 'export LD_LIBRARY_PATH=lib/' be the first command in each of your scenario scripts. 
+      Sample scenario files 'execute1.sh' and 'execute2.sh' are present in 'uxg140230/'
+
+3) To run an executable from WORKING directory (uxg140230/) you should use th command './bin/<exec_name>'
+   e.g. ./bin/irouter 01 03 01 02 02
+   
+4) All the ouput files will be saved in 'files/' directory (i.e uxg140230/files/).
+
+5) Please clear the contents of 'files/' directory before running a scenario script. Otherwise, it may result in incorrect output.
+   
+6) *IMPORTANT*. Do not delete any directory.
+
